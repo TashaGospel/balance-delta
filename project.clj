@@ -120,8 +120,8 @@
                      {:output-to "target/test.js"
                       :main "balance-delta.doo-runner"
                       :optimizations :whitespace
-                      :pretty-print true}}}}
+                      :pretty-print true}}}}}
                   
-                  }
+
    :profiles/dev {}
    :profiles/test {}})
