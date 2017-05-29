@@ -12,7 +12,7 @@
                             (days-between last-date c/end-date)))))
 
 (defn update-delta [{:keys [last-date] :as data}]
-  (let [now (t/now)]
+  (let [now (c/from-auckland-time (t/now))]
     (-> data
         (update :delta #(+ % (* daily-allowance (days-between last-date now))))
         (assoc :last-date now))))
